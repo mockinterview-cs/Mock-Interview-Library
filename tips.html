@@ -14,25 +14,37 @@
 <!--   <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
   <div id="accordion">
     
-    <div class="card">
+<!--     <div class="card">
       <div class="card-header">
-        <a class="card-link" data-toggle="collapse" href="#collapseOne">
-          Hideaki - Sep 8th 2022
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Collapsible Group Item #3
         </a>
       </div>
-      <div id="collapseOne" class="collapse" data-parent="#accordion">
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          Hey folks,
-          Just as a reminder, code readability is a huge part of communication in interview settings as well as submitting PRs in companies. Most code in real life will be written once but read hundreds of times, so writing clean code is key.
-          I like to think of refactoring like publishing a book. We start with a working draft (your first working code that passes all tests), then we start editing that draft to be clear, concise, and easy to read for others. Solving the algo correctly is only about half of the  journey!
-          Practical example:
-          const storage = []; // declare array to store numbers 
-          This is a classic combination of bad naming + overcompensating with comments. We’ve all done it! This can be resolved by:
-          const numArr = [];
-          Now you know that it’s an array of numbers. A good name usually describes the functionality and the data type like initIndex , isValidated (booleans should be prepended by “is”), userObj. This is often neglected inside callbacks in array methods. If you’re mapping over numArr, then the callback param should be num since that’s exactly what you’re looking at   numArr.map((num) => {}). Don’t just default to ele or item as those names mean nothing to the reader, much like storage in this example.
-          by changing storage to numArr, we can now remove the comment as it’s just echoing the name
-          The big take away is that if you name something badly, you either confuse the reader if you don’t have comments (under-commenting) or you’re forced to put comments everywhere (over-commenting) to compensate. Great naming solves both issues of under-commenting and over-commenting
-          cheers!
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div> -->
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          2022 Oct 8th - Ngoc Zwolinski
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Good morning Team,
+          Recently I got asked quite a few questions regarding tip for passing the interviews. I have compiled together:
+          All of the useful resources I have used for preparing
+          The structure of the exam (seems to be common question from everyone)
+          Tip for technical communication (stealing from @Lucas :laughing:)
+          Tip for debugging (my own approach for debugging)
+          Please feel free to add more information as needed. Especially for OOP and Async since I did not have experience for those:
+          Please use view only if you are not planning to edit, so doc does not get inadvertently deleted
+          View Only: https://docs.google.com/document/d/1iEAaKWpt3_uPdL6RKmvDLfANrosszHTEQKlwnFlOr60/edit?usp=sharing
+          Edit: https://docs.google.com/document/d/1iEAaKWpt3_uPdL6RKmvDLfANrosszHTEQKlwnFlOr60/edit?usp=sharing
         </div>
       </div>
     </div>
@@ -40,7 +52,7 @@
     <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-        Lucas - Sep 17th 2022
+        2022 Sep 17th - Lucas
       </a>
       </div>
       <div id="collapseTwo" class="collapse" data-parent="#accordion">
@@ -164,18 +176,28 @@
       </div>
     </div>
     
-<!--     <div class="card">
+    <div class="card">
       <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-          Collapsible Group Item #3
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          2022 Sep 8th - Hideaki
         </a>
       </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div id="collapseOne" class="collapse" data-parent="#accordion">
         <div class="card-body">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Hey folks,
+          Just as a reminder, code readability is a huge part of communication in interview settings as well as submitting PRs in companies. Most code in real life will be written once but read hundreds of times, so writing clean code is key.
+          I like to think of refactoring like publishing a book. We start with a working draft (your first working code that passes all tests), then we start editing that draft to be clear, concise, and easy to read for others. Solving the algo correctly is only about half of the  journey!
+          Practical example:
+          const storage = []; // declare array to store numbers 
+          This is a classic combination of bad naming + overcompensating with comments. We’ve all done it! This can be resolved by:
+          const numArr = [];
+          Now you know that it’s an array of numbers. A good name usually describes the functionality and the data type like initIndex , isValidated (booleans should be prepended by “is”), userObj. This is often neglected inside callbacks in array methods. If you’re mapping over numArr, then the callback param should be num since that’s exactly what you’re looking at   numArr.map((num) => {}). Don’t just default to ele or item as those names mean nothing to the reader, much like storage in this example.
+          by changing storage to numArr, we can now remove the comment as it’s just echoing the name
+          The big take away is that if you name something badly, you either confuse the reader if you don’t have comments (under-commenting) or you’re forced to put comments everywhere (over-commenting) to compensate. Great naming solves both issues of under-commenting and over-commenting
+          cheers!
         </div>
       </div>
-    </div> -->
+    </div>
     
   </div>
 </div>
