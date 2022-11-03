@@ -1,1 +1,184 @@
-<h1>Hello world, welcome to tips.html</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>General Tips for Technical Interview Praparation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+<!--   <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
+  <div id="accordion">
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+          Hideaki - Sep 8th 2022
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          Hey folks,
+          Just as a reminder, code readability is a huge part of communication in interview settings as well as submitting PRs in companies. Most code in real life will be written once but read hundreds of times, so writing clean code is key.
+          I like to think of refactoring like publishing a book. We start with a working draft (your first working code that passes all tests), then we start editing that draft to be clear, concise, and easy to read for others. Solving the algo correctly is only about half of the  journey!
+          Practical example:
+          const storage = []; // declare array to store numbers 
+          This is a classic combination of bad naming + overcompensating with comments. We’ve all done it! This can be resolved by:
+          const numArr = [];
+          Now you know that it’s an array of numbers. A good name usually describes the functionality and the data type like initIndex , isValidated (booleans should be prepended by “is”), userObj. This is often neglected inside callbacks in array methods. If you’re mapping over numArr, then the callback param should be num since that’s exactly what you’re looking at   numArr.map((num) => {}). Don’t just default to ele or item as those names mean nothing to the reader, much like storage in this example.
+          by changing storage to numArr, we can now remove the comment as it’s just echoing the name
+          The big take away is that if you name something badly, you either confuse the reader if you don’t have comments (under-commenting) or you’re forced to put comments everywhere (over-commenting) to compensate. Great naming solves both issues of under-commenting and over-commenting
+          cheers!
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Lucas - Sep 17th 2022
+      </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Hi there,
+          I've had chances to conduct quite a lot of mock interviews and have learned a lot from folks. Thank you so much and I'm truly grateful for that. Meanwhile, I've jotted down some of the most common mistakes I've encountered during interviews. Hope you find something useful, particularly for those new to coding and preparing for TIs!
+
+          Non-Technical mistakes:
+
+          0. Didn't take the time to thoroughly understand the prompts (especially with the long and a bit complex ones)
+          Some people believe they have a good understanding of the prompts until they write down some code and realize they have missed something important. As a result, they have to remove all of the code and begin reading the prompt again, which wastes time! If you didn't get it on the first read, make sure you go through the prompts again. Given examples can help you understand what's going on, so try them out to see what happens and if they make sense to you.
+          Key Takeaways:
+
+          Read the prompt carefully to understand the requirements
+          Dry run the given examples to see if they make sense to you
+
+          1. Didn’t clarify edge cases prior to implementing the solution
+          If you only use the examples provided to build your solution, hidden test cases may affect your overall strategy or confuse you since you may not know what to return in those cases.
+          For instances:
+
+          Prompt says: Given a number, calculate the sum of all even digits in that number.
+          Edge case: The number can be negative!
+          Prompt says: Given an array of strings, find the shortest and longest in that array.
+          Edge case: All strings can have the same length!
+          Prompt says: Given an array of numbers, return the one that is duplicated multiple times.
+          Edge case: All numbers can be distinct OR all numbers can be repeated more than once!
+          Therefore, think more broadly about the requirements and clarify exceptional cases (if applicable) with interviewers to direct your approach from the start because it's always better than thinking of them after you've completed your solution!
+          Key Takeaways:
+
+          Think more generally about the prompt for edge cases
+          Clarify exceptional situations (if applicable) with interviewers
+
+          2. The pseudo-code was either too detailed or too vague
+          Some people write overly detailed pseudo-code, which takes an inordinate amount of time. Meanwhile, some others write shaky pseudo-code that doesn't clearly describe the message they're trying to convey. I don't think it's a good habit in either case. I strongly recommend you watch the sample video that Codesmith sent us (when scheduling an interview) to learn more about technical communication, how to write pseudo-code, and program layout.
+          There are also people who write pseudo-code by writing real code in comments and then uncommenting to get the complete program, which I believe is completely unacceptable!
+          Key Takeaways:
+
+          Don’t write too detailed pseudo-code but make sure it’s descriptive enough
+          Watch the sample video from Codesmith to learn more about good practices in Technical Interviews (pseudo-code and technical communication)
+
+          3. Don’t know certainly what to do
+          Some people finished reading the prompt, and had a lot of ideas in their head but weren't sure what to do, so they rushed to MDN to look up some built-in functions and seemed to want to try all of them. They searched one after the other, but there is no clear direction, which only adds to their confusion and wasted time.
+          When you have many ideas for a problem, I believe you should do a little more investigation to find the optimal solution and try it first. If it doesn't work or you realize you're doing something wrong, try to fix it first, if that still doesn't work, consider other options!
+          Key Takeaways:
+
+          Pick the solution that you’re comfortable with
+          Look up how to achieve that if necessary
+          Fix encountered bugs (don’t immediately switch to another one if you meet some errors)
+          (Optional) Consider other solutions if you realized it should work properly
+
+          4. Technical communication
+          To be honest, I need to work a lot on my technical communication skills. However, I've noticed that some people lack confidence in their communication, which makes it difficult to deliver their ideas to others. Some others analyzed the problem quite carefully and put in some solutions, then jumped into pseudo-code but didn't summarize what they actually wanted to do (overall strategy) with a bunch of such ideas making the interviewer think you are just thinking out loud to figure things out, and therefore it is a bit difficult to shape your approach to the problem.
+          I think you should divide the preceding process into two distinct and separate stages. That is, after you have analyzed and comprehended the prompt, you should summarize the main idea that you want to pursue, as well as how you would like to do it, so that it’ll be easier to follow along.
+          Key Takeaways:
+
+          Be confident in communicating
+          Think out loud and analyze the problems
+          Describe your specific solution to the problem
+
+          5. Psychology
+          Well, psychology also plays a very important role. I've seen some people who’re so nervous that they didn't perform well in the interview, even though they don't have any trouble with those problems when they're calm. Many factors influence our psychology during an interview, including time constraints, interviewer pressure, a lack of confidence in ourselves, poor preparation, and so on. Furthermore, many people place too much emphasis on passing the interview, which unintentionally leads to an invisible pressure suppressing within our psyche. I think the interview should only be seen as an opportunity to test our knowledge and skills, if we haven't achieved it yet, it's a good sign for us to try to study and practice more in order to advance.
+          After all, with hard work and practice, you will get into this immersive program because you deserve it and Codesmith is definitely looking for candidates with the same qualities as you.
+          And what I mean is that failing the interview isn't such a bad thing, nor is it the end of the world. Consider it a game in which we are attempting to excel. As such, I believe the preparation process will be much lighter and more effective, and the mind will certainly be more relaxed.
+          Key Takeaways:
+
+          Keep calm in the interview!
+          It’s not the end of the world if we haven’t passed the interview on first attempts
+          Treat the Technical Interview as a game!
+          Keep practicing to play better
+
+          Technical mistakes:
+
+          0. Created unnecessary code
+          Some people added redundant and unnecessary code while implementing the solution, resulting in a solution that is long, difficult to manage, and sometimes takes longer to debug.
+          For example, if you declare a variable to store a string, you don't need to declare another one to store the length of that string because we can easily access it directly through the .length() property. Or to find the largest and the smallest value in an array, you don't need to create two separate loops to find each one, but you can use a loop and combine conditions to find both at the same time, etc.
+          I believe that in programming the more code we write, the easier it is to make mistakes, so be lean and limit unnecessary code.
+          It is important to note that redundant code is not the same as adding variables to make the code more readable and cleaner. For instance, if you have a sequence of methods applied to a string, I believe you should save the return in a new variable so that we can use it many times later, avoiding the need to chain a sequence of such methods again! You had the thought!
+          Key Takeaways:
+
+          Avoid redundant code if it’s not necessary
+
+          1. ‘const’ vs. ‘let’
+          The difference between const and let is pretty obvious. Most of the time, when working with objects and arrays, I think we should use const to declare it, unless you want to reassign references to the object/array, you must use let.
+          Also, when iterating over an array or object (especially with for...in and for...of), you should determine whether we need to change or update each element we traverse, if yes then use let, otherwise you should use const.
+          Although it is just a small change, I think this is one of the good practices that we should follow because it represents the idea and purpose of const and let in JS.
+          Key Takeaways:
+
+          Use ‘let’ for variables
+          Use ‘const’ for constant values, objects, and arrays (unless you need to reassign references to the objects/arrays)
+          Consider using ‘let’ or ‘const’ in for…in and for…of loops
+
+          2. Complicated things
+          Some people have a habit of using complex things to solve a simple problem! They use a lot of built-in functions to handle input, filter, and store the necessary information. Some of the methods are sometimes very creative, but for the most cases, I find them unnecessary and cumbersome, and I rarely find problems more complicated than using loops to solve them!
+          Excessive use of built-in functions requires you to really understand how it works, and it should really excel at helping you solve the problem, otherwise, I think it's better to approach the problem in a simple way. It's simple because using things that are too sublime will often be difficult to debug if errors are encountered. And I think we should practice a lot to gain experience so that we have many options when solving a new one.
+          Key Takeaways:
+
+          Prioritize simple code rather than complex ones!
+          Make sure you know what built-in functions behave when using them
+
+          3. Format code
+          Yes, code structure matters! The layout of your code may not have much to do with technical issues but if the layout is bad it will raise some issues affecting your performance because you simply have to lose more time debugging, trying to figure out what the if statement does, where the braces close, and so on. There are other things where bad layout can completely stop your code from working. At first, I thought this was a simple and quick fix until someone showed me that it took them almost 10 minutes just to mess around with their messed-up code.
+          Therefore, it is also important to practice good habits when presenting code, such as indentation, opening, and closing brackets, showing relationships between nested statements, etc. Trust me, this saves you a lot of time and you won't need to comment everything out only to realize that you forgot to remove an extra bracket!
+          Key Takeaways:
+
+          Always put an indentation in nested or inner statements
+          Keep track of opening and closing brackets
+          Follow a specific style for all your code!
+          Read more: https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29
+
+          4. Debugging
+          Debugging is one of the most important skills. Where to put the console.log() statements to get useful information also requires the experience of the programmer. Particularly in this regard, I believe that only practice can give us practical experiences and useful case studies from which to learn more. Don't put console.log() everywhere because it not only won't help you solve the problem faster, but it will also confuse you with the mess that appears on the console.
+          Key Takeaways:
+
+          Practice putting some meaningful logs
+          Take advantage of online resources to double-check if the functions are working as you expected with the correct syntax and proper arguments
+
+          That's it for this post! Hope you enjoy it, and your feedback is really great for me to improve in the future, and I extremely appreciate that.
+
+          As always, happy coding!
+        </div>
+      </div>
+    </div>
+    
+<!--     <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div> -->
+    
+  </div>
+</div>
+    
+</body>
+</html>
