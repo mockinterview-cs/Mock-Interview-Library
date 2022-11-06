@@ -34,6 +34,30 @@
         </div>
       </div>
     </div> -->
+      
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed card-link" data-toggle="collapse" href="#collapse2">
+            Check occurrences of a number
+          </a>
+        </div>
+        <div id="collapse2" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+            Given an arbitrarily nested array of arrays, a number N and an integer K. Return 'YES' if the number N appeared exactly K times in the given array, otherwise, return 'NO'.
+            <br>
+            <br> For example:
+            <br> console.log(doesNumAppearKTimes([1,2,[3,4,[5],6],3,7],3,3));	             // 'NO'
+            <br> console.log(doesNumAppearKTimes([[0,-8,1,[-2,2]],[11,[4],6],2,2],2,3));	     // 'YES'
+            <br> console.log(doesNumAppearKTimes([10,21,4,9,3,7,4,1],4,1));	                 // 'NO'
+            <br> console.log(doesNumAppearKTimes([-8,[-1,-2,-7],[-1],-3,-8],-1,3));	         // 'NO'
+            <br> console.log(doesNumAppearKTimes([2,[3,[4,[5,[6,[],6],5],4],3],2],6,1));	     // 'NO'
+            <br> console.log(doesNumAppearKTimes([2,9,[11,11,11],0],0,1));	                 // 'YES'
+            <br> console.log(doesNumAppearKTimes([[[[[[[[[[[[7]]]]]]]]]]]],7,0));	         // 'NO'
+            <br> console.log(doesNumAppearKTimes([[91],[0],[22],[-18],[107],[],[21]],21,1));	 // 'YES'
+          </div>
+        </div>
+      </div>
+      
       <div class="card">
       <div class="card-header">
         <a class="collapsed card-link" data-toggle="collapse" href="#collapse1">
