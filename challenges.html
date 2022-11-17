@@ -124,7 +124,7 @@
           </div>
         </div> -->
           
-<!--           <div class="card">
+          <div class="card">
             <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#oop5">
                 Domino
@@ -138,13 +138,13 @@ Domino objects should function similarly to Arrays -i.e. they will store values 
                 <br> All Domino objects should contain their own 'chainLength' property, which keeps track of the number of items they contain. When a Domino is first created, it should initialize the value at 0-th index to the 'nextIndex', and also set the value at the nextIndex-th index to null, and it should have the chainLength of 1.
                 <br> - Task 1: Declare a function 'add', which is accessible to ALL instances of 'Domino'. 'add' should take in a single number as an argument, and when invoked on a Domino instance, should set the value of the key that has a null value to the passed-in number, and set the value at the number-th index to null.
 However, if the added number has already existed as a key in the object (and not holding the null value), remove the property associated with that number from the object. Update the Domino's chainLength property, and returns the new chainLength.
-                <br> - Task 2: Declare a function 'remove', which is accessible to ALL instances of 'Domino'. 'remove' should take in a number as a single argument, and when invoked on a Domino instance, should update the value of the key corresponding to the number to null and remove the chain starting from that number. Update the Domino's chain length property and return the new chain length. However, if the passed-in number is not found as a key or there's no link TO that number, return "Oops! Something wrong happened --Can't remove the *number*.".
-Important note: After removing an element, there is a possibility that in the current object there will be more than one key with a null value. In this case, keep only the largest key.
+                <br> - Task 2: Declare a function 'remove', which is accessible to ALL instances of 'Domino'. 'remove' should take in a number as a single argument, and when invoked on a Domino instance, should update the value of the key corresponding to the number to null and remove the chain starting from that number. Update the Domino's chain length property and return the new chain length. However, if the passed-in number is not found as a key or there's no link TO that number, return "Oops! Something went wrong --Can't remove the *number*.".
+                <br> *Important note: After removing an element, there is a possibility that in the current object there will be more than one key with a null value. In this case, keep only the largest key.
                 <br> - Task 3: Declare a function 'count', which is accessible to ALL instances of 'Domino'. 'count' should take in no arguments, and when invoked on a Domino instance, should return the number of connected components.
                 <br> - Task 4: Declare a function 'checkPath' which is accessible to ALL instances of 'Domino'. 'checkPath' should take in two numbers (called 'source' and 'target') as arguments, and when invoked on a Domino instance, should return the number of steps to go from 'source' to 'target' if there's a path between two numbers, otherwise return "NO PATH!".
               </div>
             </div>
-          </div> -->
+          </div>
           
           <div class="card">
             <div class="card-header">
