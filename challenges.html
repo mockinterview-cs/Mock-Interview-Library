@@ -126,6 +126,25 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#oop6">
+                BrowserHistory
+              </a>
+            </div>
+            <div id="oop6" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                Declare a function 'BrowserHistory', which takes in no argument and returns an instance of a 'BrowserHistory' object when invoked with the 'new' keyword.
+                <br> BrowserHistory objects should mimic the basic function of a history tracker - i.e. they will keep track of the order of searched items.
+                <br> All BrowserHistory objects should contain their own 'size' and 'index' properties. The ‘size’ keeps track of the number of items in the object. The 'index' works as a 'pointer' to reference the current item. When a BrowserHistory is first created, it should have a size and an index of 0.
+                <br> - Task 1: Declare a function 'search', which is accessible to ALL instances of 'BrowserHistory'. 'search' should take in a single argument, and when invoked on a BrowserHistory instance, should add the passed-in argument to the object as a key, and the corresponding value is another object with only one property called 'order'. The 'order' is an array of numbers to keep track of the order of invocation on the item. When a new item is added, it should be added to the highest order (the highest order is the latest added item and the lowest order is the oldest added item), and if an item has already existed in the object, push the new order to the order list of that item. Update the 'index' to the latest added order. And update the size properly as well.
+                <br> - Task 2: Declare a function 'goBack', which is accessible to ALL instances of 'BrowserHistory'. 'goBack' should take in no argument, and when invoked on a BrowserHistory instance, should return the previous searched item compared to the current one. Return an empty string if not found! During the execution, adjust the 'index' properly to keep track of the history (i.e. decrement the 'index' by 1).
+                <br> - Task 3: Declare a function 'goForward', which is accessible to ALL instances of 'BrowserHistory'. 'goForward' should take in no argument, and when invoked on a BrowserHistory instance, should return the next searched item compared to the current one. Return an empty string if not found! During the execution, adjust the 'index' properly to keep track of the history (i.e. increment the 'index' by 1)
+                <br> - Task 4: Declare a function 'clean', which is accessible to ALL instances of 'BrowserHistory'. 'clean' should take in a positive integer K as a single argument, and when invoked on a BrowserHistory instance, should remove the first K oldest searches among all the searched items (i.e. first K smallest orders). If the order list is empty, remove the corresponding item from the object and update the size properly.
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#oop5">
                 Domino
               </a>
@@ -155,7 +174,7 @@ However, if the added number has already existed as a key in the object (and not
             <div id="oop4" class="collapse" data-parent="#accordionParent">
               <div class="card-body">
                 <div class="last-updated"><i>Last updated: Nov 14th 2022</i></div>
-                Declare a function ‘OrderedList’, which takes in no arguments and returns an instance of an 'OrderedList' object when invoked with the 'new' keyword.
+                Declare a function 'OrderedList', which takes in no arguments and returns an instance of an 'OrderedList' object when invoked with the 'new' keyword.
                 OrderedList objects should function similarly to arrays - i.e. they will store values at numbered indexes, starting at 0. However, all elements are in sorted order.
                 <br> All OrderedList objects should contain their own 'length' property, which keeps track of the number of items they contain. When an OrderedList is first created, it should have a length of 0.
                 <br> - Task 1: Declare a function, 'add', which is accessible to ALL instances of 'OrderedList'. 'add' should take in a number as a single argument, and when invoked on an OrderedList instance, should add the number to that OrderedList in descending order, update the OrderedList's length property appropriately, and return the length of the OrderedList.
