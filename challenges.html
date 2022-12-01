@@ -285,7 +285,7 @@ However, if the added number has already existed as a key in the object (and not
       <h3>Closures</h3>
         <div id="accordion" style="font-family: monospace;">
 
-    <!--     <div class="card">
+<!--         <div class="card">
           <div class="card-header">
             <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
               Collapsible Group Item #3
@@ -297,6 +297,22 @@ However, if the added number has already existed as a key in the object (and not
             </div>
           </div>
         </div> -->
+          
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#clo2">
+                Time Keeper
+              </a>
+            </div>
+            <div id="clo2" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 1st 2022</i></div>
+                Declare a function 'timeKeeper' that takes in a callback (just print something out, NOT return any values) and a positive integer K as arguments, and return another function.
+                <br> The returned function can take in one or no arguments. When the returned function was invoked at the K-th time, it should run the callback and set the next time to run the callback again to the passed-in argument, if any, otherwise, return "Please provide the time for the next call!" and set the next time to run the callback to the previous time.
+                <br> Otherwise, if the number of function calls is less than K, return "Please invoke the function *times* time(s) more to see the message!".
+              </div>
+            </div>
+          </div>
 
           <div class="card">
           <div class="card-header">
