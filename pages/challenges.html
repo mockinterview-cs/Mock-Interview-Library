@@ -42,6 +42,26 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#rec5">
+                Find the shortest sub-array containing the special character
+              </a>
+            </div>
+            <div id="rec5" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 1st 2022</i></div>
+                Declare a function 'shortestArrContainsChar' that takes in an arbitrarily nested array and returns the shortest sub-array containing the character '#' (excluding the array itself containing the '#'). Return "No valid arrays found!" if there's no sub-array that satisfies the requirements and if there's more than one valid sub-array, return any of them.
+                <br>
+                <br> For example:
+                <br> console.log(shortestArrContainsChar([1,2,[[3,'#'],1], [['#']]]));	// [['#']]
+                <br> console.log(shortestArrContainsChar([1,2,[1,2,[3]],4,['#']]));	// [1, 2, [1, 2, [3]], 4, ['#']]
+                <br> console.log(shortestArrContainsChar([1,2,[1,2,[3,'#']],4,[3,[2]],['#']]));	// [1, 2, [3, '#']]
+                <br> console.log(shortestArrContainsChar([1,2,'#']));	// 'No valid sub-array found!'
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#rec4">
                 Form the largest number with K digits
               </a>
