@@ -145,6 +145,24 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#oop7">
+                SequentialList
+              </a>
+            </div>
+            <div id="oop7" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 1st 2022</i></div>
+                Declare a function 'SequentialList' which takes in no arguments and returns an instance of a 'SequentialList' object when invoked with the 'new' keyword. SequentialList objects should function similarly to arrays - i.e. they will store values at numbered indexes, starting from 1.
+                <br> All SequentialList objects should contain their own 'size' property, which keeps track of the number of items they contain. When a SequentialList is first created, it should have a length of 0.
+                <br> - Task 1: Declare a function, 'add', which is accessible to ALL instances of 'SequentialList'. 'add' should take in two numbers (called 'key' and 'value') as arguments, and when invoked on a SequentialList instance, should add the key-value pair to that SequentialList if all the keys before the current one have been added before (counting from 1), otherwise return "Please fill up all keys before this one first!". However, if the key has already existed, store all added values as an array. Update the SequentialList's size property appropriately, and return the new size.
+                <br> - Task 2: Declare a function, 'delete', which is accessible to ALL instances of 'SequentialList'. 'delete' should take in a number (called 'key') as a single argument, and when invoked on a SequentialList instance, should remove the associated property corresponding to the key from SequentialList if all the keys after the passed-in key have been removed before - i.e. the passed-in key should be the last key, otherwise return "Please remove all keys after this one first!" or "Key not found!" if the passed-in key is not found in the object. Update the SequentialList's size property appropriately, and return the removed value.
+                <br> - Task 3: Declare a function, 'getMax', which is accessible to ALL instances of 'SequentialList'. 'getMax' should take in no arguments, and when invoked on a SequentialList instance, should return the key with the largest sum of its values in the instance.
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#oop6">
                 BrowserHistory
               </a>
