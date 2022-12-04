@@ -195,10 +195,12 @@
                 <div class="last-updated"><i>Last updated: Dec 4th 2022</i></div>
                 Declare a function 'WooHoo', which takes in a string as a single argument and returns an instance of a 'WooHoo' object when invoked with the 'new' keyword.
                 <br> All WooHoo objects should contain their own 'inbox' and 'username' properties. The 'inbox' is an object with the 'size' property to keep track of the number of items in the 'inbox'. Each item will represent a message with the following properties:
-                <br> - 'from': the username of sender (from other WooHoo instances)
-                <br> - 'message': the content of message
-                <br> - 'unread': when a new message arrives, the default value is set to true to indicate that the message is unread
-                <br> - 'when': the date in the format 'MM/DD/YYYY' when a new message was sent to the recipient
+                <ul>
+                  <li>'from': the username of sender (from other WooHoo instances)</li>
+                  <li>'message': the content of message</li>
+                  <li>'unread': when a new message arrives, the default value is set to true to indicate that the message is unread</li>
+                  <li>'when': the date in the format 'MM/DD/YYYY' when a new message was sent to the recipient</li>
+                </ul>
                 <br> When a WooHoo is first created, it should have an inbox object with a single size (set to 0) property, and a username set to the passed-in argument.
                 <br> - Task 1: Declare a function 'send', which is accessible to ALL instances of 'WooHoo'. 'send' should take in at most 3 arguments as follows:
                 <br> - 'to': a username to which a message should be sent (required)
