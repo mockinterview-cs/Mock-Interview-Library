@@ -223,7 +223,7 @@
                 <br> &nbsp;&nbsp;&nbsp;- 'when': the date in the format 'MM/DD/YYYY' when a new message was sent to the recipient
                 <br> When a WooHoo is first created, it should have an inbox object with a single size (set to 0) property, and a username set to the passed-in argument.
                 <br> - Task 1: Declare a function 'send', which is accessible to ALL instances of 'WooHoo'. 'send' should take in at most 3 arguments as follows:
-                <br> &nbsp;&nbsp;&nbsp;- 'to': a username to which a message should be sent (required)
+                <br> &nbsp;&nbsp;&nbsp;- 'to': a username to which a message should be sent (required --should be represented under a WooHoo instance)
                 <br> &nbsp;&nbsp;&nbsp;- 'message': the text as message content (required)
                 <br> &nbsp;&nbsp;&nbsp;- 'date': the date (in the format of 'MM/DD/YYYY') for which the message will be sent (optional --default is today)
                 <br> When invoked on a 'WooHoo' instance, should update the inbox of the recipient ('to') properly, i.e. add a new message to the inbox with the key being an id as a unique 6-character long string (FREE to go with any possible algorithms to generate unique-like ids) and the value being an object containing the necessary information to construct a new message. If there're more than 3 messages from the same user in a day, tag all messages from that user in that day as 'spamWarning' --i.e. add one more property called 'spamWarning' to these messages and set it to 'true'. Update the size of the inbox properly.
