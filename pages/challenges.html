@@ -408,6 +408,21 @@ However, if the added number has already existed as a key in the object (and not
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#clo4">
+                Trigger me at the K-th time
+              </a>
+            </div>
+            <div id="clo4" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 21st 2022</i></div>
+                Declare a function 'trigger' that takes in a number K and a callback as arguments, and return another function.
+The returned function should take in a single argument and when invoked at the K-th time, it should run the callback on the passed-in argument and return that value, then reset the timer for that specific argument to be ready for the next time. However, the next invocation at the K-th time on the same value, it should run the callback with the previous returned value as the argument. And if it's not the time to run the callback, return 'Please invoke the function *time* time(s) more with *argument* to see the result'.
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#clo3">
                 Create a new string
               </a>
