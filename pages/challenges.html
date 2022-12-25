@@ -227,6 +227,25 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#oop10">
+                Chars
+              </a>
+            </div>
+            <div id="oop10" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 25th 2022</i></div>
+                Declare a function 'Chars', which takes in one (called 'initialString') or no arguments and returns an instance of a 'Chars' object when invoked with the 'new' keyword. Chars should function similarly to arrays - i.e. they will store values at numbered indexes, starting at 0. All Chars objects should contain their own 'length' property to keep track of the number of charaters in the object. When a Chars is first created, it should initialize the length property to the length of 'initialString' if it is passed in or 0 if it's not. And in case the initialString is provided, add each character of it to the object.
+                <br> - Task 1: Declare a function 'affix', which is accessible to ALL instances of 'Chars'. 'affix' should take in a string as a single argument, and when invoked on a Chars instance, should add the string to the instance character by character. Update the length property appropriately and return it.
+                <br> - Task 2: Declare a function 'split', which is accessible to ALL instances of 'Chars'. 'split' should take in a string (called 'delimiter') as a single argument, and when invoked on a Chars instance, should return an array of strings splitted by the delimiter.
+                <br> - Task 3: Declare a function 'join', which is accessible to ALL instances of 'Chars'. 'join' should take in a string (called 'linkedBy') as a single argument, and when invoked on a Char instance, should return another 'Chars' instance with all characters are joined by the passed-in string.
+                <br> - Task 4: Declare a function 'chain', which is accessible to ALL instances of 'Chars'. 'chain' should take in another 'Chars' instance, and when invoked on a 'Chars' instance, should return a new instance with all characters from the passed-in instance appended to the current instance.
+                <br> - Task 5: Declare a function 'replaceAll', which is accessible to ALL instances of 'Chars'. 'replaceAll' should take in two strings (called 'pattern' and 'replacedBy') as arguments, and when invoked on a 'Chars' instance, should return a new 'Chars' instance with all patterns replaced by the 'replacedBy' string.
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#oop9">
                 NumArray
               </a>
