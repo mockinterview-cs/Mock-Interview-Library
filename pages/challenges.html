@@ -43,6 +43,35 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#rec9">
+                Data processing
+              </a>
+            </div>
+            <div id="rec9" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 29th 2022</i></div>
+                Declare a fuction 'processData' which takes in a string (called 'data') as a single argument. Assume that the whole data process is divided into two sub-processes (called 'loading' and 'extracting'). When data is being loaded, display the '#' at corresponding positions at each step (from the beginning up to the current index). And when data is being extracted, remove the '#' at corresponding indexes at each step (from the beginning up to the current index). Return "*data* is 100% processed!" when the whole process is done.
+                <br>
+                <br> For example:
+                <br> console.log(processData('1234'));
+                <br> /*
+                <br> 'Loading... 1234'
+                <br> 'Loading... #234'
+                <br> 'Loading... ##34'
+                <br> 'Loading... ###4'
+                <br> 'Loading... ####'
+                <br> 'Extracting 1###'
+                <br> 'Extracting 12##'
+                <br> 'Extracting 123#'
+                <br> 'Extracting 1234'
+                <br> '1234 is 100% processed!'
+                <br> */
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#rec8">
                 Remove all patterns
               </a>
