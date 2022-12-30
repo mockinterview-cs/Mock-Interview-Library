@@ -268,12 +268,12 @@
                 <br> - Task 2: Declare a function 'quickPlay', which is accessible to ALL instances of 'Lottery'. 'quickPlay' should take in no arguments, and when invoked on a Lottery instance, should function similarly to the 'tryLuck' method by randomly generating an array of five numbers as a 'whiteBalls' array and another number as a 'powerBall'. Add the 'whiteBalls' array and 'powerBall' number to the instance under an object with corresponding keys.
                 <br> - Task 3: Declare a function 'luckyDraw', which is accessible to ALL instances of 'Lottery'. 'luckyDraw' should take in no arguments, and when invoked on a Lottery instance should randomly generate a 'whiteBalls' array and a 'powerBall' number, and return an array of strings (2-digit version of each number) with the length of six, in which the first five numbers are from the 'whiteBalls' array and the last one is the 'powerBall' number.
                 <br> - Task 4: Declare a function 'match', which is accessible to ALL instances of 'Lottery'. 'match' should take in no arguments, and when invoked on a Lottery instance, should check if anyone wins this draw by the following rules:
-                <br> - powerball + 5 whiteballs 									=> Grand Prize
-                <br> - 5 whiteballs 															=> 2nd Prize
-                <br> - powerball + 4 whiteballs 									=> 3rd Prize
-                <br> - powerball + 3 whiteballs or 4 whiteballs 	=> 4th Prize
-                <br> - powerball + 2 whiteballs or 3 whiteballs 	=> 5th Prize
-                <br> - powerball or powerball + 1 whiteball 			=> 6th Prize
+                <br> - powerball + 5 whiteballs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; => Grand Prize
+                <br> - 5 whiteballs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; => 2nd Prize
+                <br> - powerball + 4 whiteballs &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; => 3rd Prize
+                <br> - powerball + 3 whiteballs or 4 whiteballs &nbsp; => 4th Prize
+                <br> - powerball + 2 whiteballs or 3 whiteballs &nbsp; => 5th Prize
+                <br> - powerball or powerball + 1 whiteball &nbsp; &nbsp; &nbsp; => 6th Prize
                 <br> Print out the congratulations corresponding to each prize if there is a winner. If no winners are found for the Grand Prize, the Grand Prize will be increased by 6 times and other prizes will be incremented by the lowest prize in the whiteball array, and return "No winners found! The grand prize is now $*grandPrize*. Best of luck next time, future millionaire!". Otherwise, return "Big congratulations to lucky winners!".
                 <br> Note: After each 'match', all tickets will be no longer valid, so the 'Lottery' should be reset properly!
               </div>
