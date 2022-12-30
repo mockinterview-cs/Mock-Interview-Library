@@ -256,6 +256,32 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#oop11">
+                Lottery
+              </a>
+            </div>
+            <div id="oop11" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Dec 30th 2022</i></div>
+                Declare a function 'Lottery', which takes in a positive number (called 'initialJackpot') as a single argument and returns an instance of 'Lottery' when invoked with the 'new' keyword. Lottery should function similarly to arrays - i.e. they will store values at numbered indexes, starting at 0. All Lottery objects should contain their own 'soldTickets' and 'currentPrizes' properties. 'soldTickets' property keeps track of the number of tickets sold and 'currentPrizes' is an array of six numbers representing six levels of prizes (starting at the lowest prize (level 6) and increasing up to the grand prize (level 1)). Each level prize is calculated by dividing the 'initialJackpot' by the corresponding level and rounding the result down. When a Lottery is first created, it should initialize the 'soldTickets' property to 0 and initialize the 'currentPrizes' property with the passed-in initialJackpot following the rule above.
+                <br> - Task 1: Declare a function 'tryLuck', which is accessible to ALL instances of 'Lottery'. 'tryLuck' should take in an array of five numbers (called 'whiteballs') and another number (called 'powerBall') as arguments, and when invoked on a Lottery instance, should validate all numbers in the whiteBalls array (only numbers from 1 to 69 are allowed) and the powerBall number (only number from 1 to 26 are allowed). If any invalid numbers occur, return an error message. Otherwise, add them to the instance as an object with two properties ('whiteBalls' and 'powerBall') with all numbers represented under 2-digit strings.
+                <br> - Task 2: Declare a function 'quickPlay', which is accessible to ALL instances of 'Lottery'. 'quickPlay' should take in no arguments, and when invoked on a Lottery instance, should function similarly to the 'tryLuck' method by randomly generating an array of five numbers as a 'whiteBalls' array and another number as a 'powerBall'. Add the 'whiteBalls' array and 'powerBall' number to the instance under an object with corresponding keys.
+                <br> - Task 3: Declare a function 'luckyDraw', which is accessible to ALL instances of 'Lottery'. 'luckyDraw' should take in no arguments, and when invoked on a Lottery instance should randomly generate a 'whiteBalls' array and a 'powerBall' number, and return an array of strings (2-digit version of each number) with the length of six, in which the first five numbers are from the 'whiteBalls' array and the last one is the 'powerBall' number.
+                <br> - Task 4: Declare a function 'match', which is accessible to ALL instances of 'Lottery'. 'match' should take in no arguments, and when invoked on a Lottery instance, should check if anyone wins this draw by the following rules:
+                <br> - powerball or powerball + 1 whiteball 			=> 6th Prize
+                <br> - powerball + 2 whiteballs or 3 whiteballs 	=> 5th Prize
+                <br> - powerball + 3 whiteballs or 4 whiteballs 	=> 4th Prize
+                <br> - powerball + 4 whiteballs 									=> 3rd Prize
+                <br> - 5 whiteballs 															=> 2nd Prize
+                <br> - powerball + 5 whiteballs 									=> Grand Prize
+                <br> Print out the congratulations corresponding to each prize if there is a winner. If no winners are found for the Grand Prize, the Grand Prize will be increased by 6 times and other prizes will be incremented by the lowest prize in the whiteball array, and return "No winners found! The grand prize is now $*grandPrize*. Best of luck next time, future millionaire!". Otherwise, return "Big congratulations to lucky winners!".
+                <br> Note: After each 'match', all tickets will be no longer valid, so the 'Lottery' should be reset properly!
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#oop10">
                 Chars
               </a>
