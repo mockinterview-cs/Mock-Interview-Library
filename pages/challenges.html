@@ -43,6 +43,25 @@
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#rec10">
+                Update ranges
+              </a>
+            </div>
+            <div id="rec10" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Jan 1st 2023</i></div>
+                Declare a function 'updateRanges' which takes in an array of numbers and two positive numbers (called 'fromIndex' and 'toIndex') as arguments and returns an updated array in which all numbers on the left of the 'fromIndex' are replaced by the minimum number starting from the beginning up to the 'fromIndex' (exclusive) and all numbers on the right of the 'toIndex' are replaced by the maximum number starting from the 'toIndex' (exclusive) up to the end of the array.
+                <br>
+                <br> For example:
+                <br> console.log(updateRanges([1, 2, 3, 4, 5, 6], 2, 3));	// [1, 1, 3, 4, 6, 6]
+                <br> console.log(updateRanges([9, -3, 1, -6, 2, 2, 0, 4, 3], 2, 5));	// [-3, -3, 1, -6, 2, 2, 4, 4, 4]
+                <br> console.log(updateRanges([1, 2, 3, 4, 3, 2, 1], 3, 3));	// [1, 1, 1, 4, 3, 3, 3]
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#rec9">
                 Data processing
               </a>
