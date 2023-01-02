@@ -1,20 +1,6 @@
 body {
-/*     background: #b5ffad; */
-    
-/*   style for firework   */
-    background: #000;
-	margin: 0;
-/*   end style fireworks   */
+    background: #b5ffad;
 }
-
-/* canvas for firework */
-canvas {
-	cursor: crosshair;
-	display: block;
-/* 	width: 1345px;
-	height: 300px; */
-}
-/* end of canvas */
 
 button {
     border: 1px solid lightblue;
