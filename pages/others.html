@@ -22,16 +22,207 @@
     
 <!--     <div class="card">
       <div class="card-header">
-        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
           Collapsible Group Item #3
         </a>
       </div>
-      <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div id="collapseFour" class="collapse" data-parent="#accordion">
         <div class="card-body">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
         </div>
       </div>
     </div> -->
+    
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+          2022 | Dec 21st - Lucsa ⁘ Xmas Gifts
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Hello everyone,
+          <br> Xmas is coming to town! May the Christmas Season bring only happiness and joy to you and your family. On this special occasion, I've prepared a few challenges for you as a gift, and hope you enjoy it!
+          <br> If you have any questions, please feel free to leave a comment on this thread as I'm happy to discuss further!
+          <br> Merry Christmas!!
+          <br> 🎅 Challenge #1:
+          <br> Declare an object called 'XmasPrep' with the keys numbered from 1 to 12 and the corresponding values are things to do: "calculate days to Xmas", "shopping", "decorate home", "write letters to Santa", "wait for Santa distributes candies", "have a dinner", "build a Xmas tree", "movie and chill", "create a Santa's magic sack", "Time for game: flip titles", "check for lucky numbers", "form Youtube URL…and enjoy".
+          <br> 🎄 Challenge #2:
+          <br> Assume that Christmas day is on 25 December. Declare a function 'merryChristmas' that takes in a string with the expected format of 'DD Month'. Check if Christmas has passed or not, if not, return the message "Yea yea!! *days* days left to Xmas!", otherwise, return "It's been *days* days since Xmas :((". And if the passed-in string is Christmas day, return "🎄 Merry Christmas 🎄".
+          <br> Note: All months and days are only applicable for 2022!
+          <br> console.log(merryChristmas("23 July")); // 'Yea yea!! 155 days left to XMas!'
+          <br> console.log(merryChristmas("25 December"));	// '🎄 Merry Christmax 🎄'
+          <br> console.log(merryChristmas("30 December"));	// 'It's been 5 days since XMas :(('
+          <br> 🛒 Challenge #3:
+          <br> Declare a function 'shopping', which takes in an object (called 'market' with keys are items names and values are the corresponding prices) as a single argument and returns another function.
+          <br> The returned function takes in a number (called 'budget') as an argument and returns an object containing all purchased items with their amounts. The shopper will prioritize buying as many different items as possible and then as much of each as possible.
+          <br> const market = {
+          <br>  "Xmas Tree": 45.9,
+          <br>  "Ornaments": 21.98,
+          <br>  "Needlepoint Stockings": 6.77,
+          <br>  "Reindeer": 12.9,
+          <br>  "Garland": 3.31,
+          <br>  "Putz Houses": 27.79,
+          <br>  "Poinsettias": 10.3,
+          <br>  "Candles": 7.27,
+          <br>  "Mistletoe": 13.13,
+          <br>  "Tinsel": 6.03,
+          <br>  "Nutcracker": 9.12,
+          <br>  "Advent Calendar": 13.45,
+          <br>  "Christmas Linens": 16.22,
+          <br>  "Fake Snow": 10.99,
+          <br>  "String Lights": 14.5,
+          <br>  "Gift Card": 9.99,
+          <br>  "Snow Crystal": 20.81,
+          <br>  "Ribbon": 5.55,
+          <br>  "Mason Jars": 11.11,
+          <br>  "Christmas Ball": 13.31,
+          <br>  "Red Velvet Bow": 9.11,
+          <br>  "Jingle Bells": 2.22,
+          <br>  "Ink": 3.19,
+          <br>  "Boots": 19.99,
+          <br>  "Letter Box": 12.12,
+          <br>  "Village": 29.79,
+          <br>  "Wreath": 8.11,
+          <br>  "Elf": 2.99,
+          <br>  "Angle": 3.99,
+          <br>  "Hot Chocolate": 7.58,
+          <br>  "Wassail": 6.91,
+          <br>  "Yule Log": 10.34,
+          <br>  "Holly": 4.11,
+          <br>  "Quilt": 10.89
+          <br> }
+          <br> const purchase = shopping(market);
+          <br> console.log(purchase(100));
+          <br> // { Jingle Bells: 2, Elf: 1, Ink: 1, Garland: 1, Angle: 1, Holly: 1, Ribbon: 1, Tinsel: 1, Needlepoint Stockings: 1, Wassail: 1, Candles: 1, Hot Chocolate: 1, Wreath: 1, Red Velvet Bow: 1, Nutcracker: 1, Gift Card: 1 }
+          <br> ❄ Challenge #4:
+          <br> In numerology, the number nine represents completion because it is the last of the single-digit numbers (known as cardinal numbers) and the highest in value. Having said that, it symbolizes a synthesis of knowledge and experience, and vibrates with the spirit of both endings and new beginnings.
+          <br> And now…select up to 9 most expensive items among all the purchased and arrange them appropriately to return the longest chain as an array of strings in which the last character of the current string is similar to the first character of the next one (case-insensitive).
+          <br> const cart = const cart = { 'Jingle Bells': 2, 'Elf': 1, 'Ink': 1, 'Garland': 1, 'Angle': 1, 'Holly': 1, 'Ribbon': 1, 'Tinsel': 1, 'Needlepoint Stockings': 1, 'Wassail': 1, 'Candles': 1, 'Hot Chocolate': 1, 'Wreath': 1, 'Red Velvet Bow': 1, 'Nutcracker': 1, 'Gift Card': 1 }
+          <br> console.log(decorate(cart));
+          <br> // ['Nutcracker', 'Red Velvet Bow', 'Wreath', 'Hot Chocolate']
+          <br> 👼 Challenge #5:
+          <br> Declare a function 'formatAndCorrect', which takes in a string (a message from kids to Santa) as a single argument. The message is not well formatted (redundant spaces and characters are not capitalized after each punctuation) and because of their excitement, they may have misspelled the letters of Santa Claus's name (order and positions of the string 'Santa Claus' may be not correct). Help them proofread the letter, format it properly, and correct the places where Santa Claus's name is misspelled before it's sent. Don't forget to print out the error message if you find any typos, otherwise, print it out "No typo detected".
+          <br> The kids will be very grateful to you and they promise to give you presents from Santa when they receive them.
+          <br> const message = "hello Stanan Clus,   my name's Frank and I am 9 years old.  i hope you're   doing well!!   i want you  to know  that I have been very  good this   year, and I listened to my parents. This year  I'd really like the Christmas Tree  Lego set to  start my collection. Thank you so much, Satan Claus .";
+          <br> console.log(formatAndCorrect(message));
+          <br> // 'Possible typo(s) dected from the 7-th and 270-th character(s)! -> All Fixed!'
+          <br> // "Hello Santa Claus, my name's Frank and I am 9 years old. I hope you're doing well!! I want you to know that I have been very good this year, and I listened to my parents. This year I'd really like the Christmas Tree Lego set to start my collection. Thank you so much, Santa Claus."
+          <br> 🎁 Challenge #6:
+          <br> Declare a function 'distributeCandies', which takes in a positive integer (the number of candies) and an array of strings (names of nice kids for gifts), and returns another function.
+          <br> The returned function takes in a string (called 'name') and a positive integer (called 'amount' –the desired amount of candy). When the returned function is invoked, it should return an object with the keys are kids' names and the corresponding values are the number of candies each of them can be distributed if all kids on the nice list have made requests, otherwise, return "Waiting for others in the nice list!". However, if the name is being sent more than once, return "Hey kid! Your request is being processed from the North Pole. I'm on the sleigh to your chimney!", and if the name is not on the nice list, return "Nahhh! You're not on the nice list for gifts! You might be a naughty kid, so here's coal for you!".
+          <br> > Important note: Because the number of candies that Santa can carry is finite, the actual number of candies each kid could be received will be distributed based on the percentage of the amount that each kid requested with all the others on the nice list. After distributing, Santa will give the remaining candy (if there are any) to whoever has the least amount of candies.
+          <br> const candies = 335;
+          <br> const names = ['Ann', 'John', 'Lucas', 'Wey', 'Tom', 'Teo'];
+          <br> const give = distributeCandies(candies, names);
+          <br> console.log(give('John', 200));	// 'Waiting for others in the nice list!'
+          <br> console.log(give('Lucas', 120));	// 'Waiting for others in the nice list!'
+          <br> console.log(give('Teo', 20));	// 'Waiting for others in the nice list!'
+          <br> console.log(give('Wey', 305));	// 'Waiting for others in the nice list!'
+          <br> console.log(give('Ann', 10));	// 'Waiting for others in the nice list!'
+          <br> console.log(give('Tom', 199));	// { John: 78, Lucas: 47, Teo: 7, Wey: 119, Ann: 6, Tom: 78 } -> John ~ 23%, Lucas ~ 14%, Teo ~ 2%, Wey ~ 35%, Ann ~ 1%, Tom ~ 23%
+          <br> 🍽 Challenge #7:
+          <br> Declare a recursive function 'haveADinner', which takes in an array of strings (names of foods) and a positive integer K. Return an array of strings containing K foods with as many foods distinct in the first character as possible, and the others (if any) are selected in descending order of the length.
+          <br> console.log(haveADinner(['Salad', 'Kebab', 'Bread', 'Rice', 'Hamburger', 'Pizza', 'Cheese', 'Fish', 'Sandwich', 'Spaghetti', 'Bacon', 'Roast chicken', 'Sausage', 'Hotdog', 'Noodles', 'Waffle'], 9));
+          <br> // ['Salad', 'Kebab', 'Bread', 'Rice', 'Hamburger', 'Pizza', 'Cheese', 'Fish', 'Noodles']
+          <br> console.log(haveADinner(['Bacon', 'Hamburger', 'Salad', 'Hotdog', 'Sandwich', 'Smoked salmon'], 5));
+          <br> // ['Bacon', 'Hamburger', 'Salad', 'Smoked salmon', 'Sandwich']
+          <br> 👪 Challenge #8:
+          <br> Declare a recursive function 'buildXmasTree', which takes in an array of strings (components of a Xmas tree), two partners (called 'Mommy' and 'Daddy'), a target (as a string) and an array of strings (the expected order of a complete Xmas tree). Assuming that at the beginning, Mommy is holding all components. Print out the process of building the complete Xmas tree by moving all components from Mommy to the final target with the help of Daddy, obeying the following rules:
+          <br> - Only one component may be moved at a time
+          <br> - Each move consists of taking the upper component from either Mommy or Daddy and placing it on top of another
+          <br> - After a component is placed on the final target, it can't be moved around anymore.
+          <br> const components = ['root', 'middle branches', 'upper-middle branches', 'bottom branches', 'top'];
+          <br> const order = ['root', 'bottom branches', 'middle branches', 'upper-middle branches', 'top'];
+          <br> console.log(buildXmasTree(components, 'Mommy', 'Daddy', 'FINAL', order));
+          <br> /*
+          <br> 'I'm moving top from Mommy to Daddy'
+          <br> 'I'm moving bottom branches from Mommy to Daddy'
+          <br> 'I'm moving upper-middle branches from Mommy to Daddy'
+          <br> 'I'm moving middle branches from Mommy to Daddy'
+          <br> 'I'm moving root from Mommy to FINAL'
+          <br> 'I'm moving middle branches from Daddy to Mommy'
+          <br> 'I'm moving upper-middle branches from Daddy to Mommy'
+          <br> 'I'm moving bottom branches from Daddy to FINAL'
+          <br> 'I'm moving upper-middle branches from Mommy to Daddy'
+          <br> 'I'm moving middle branches from Mommy to FINAL'
+          <br> 'I'm moving upper-middle branches from Daddy to FINAL'
+          <br> 'I'm moving top from Daddy to FINAL'
+          <br> */
+          <br> 🍿 Challenge #9:
+          <br> Declare a function 'selectMovie', which takes in an array of arrays, a callback and a string (called 'quality'). Each movie in the movies array is also an array with two elements (the movie name (string) and its rating score (number)). The callback will take in a movie as a single argument and return a string representing the movie quality which is converted following the rules:
+          <br> - From 0 to less than 2: Bad
+          <br> - From 2 to less than 3.5: Fair
+          <br> - From 3.5 to less than 4.5: Good
+          <br> - From 4.5 to 5: Excellent
+          <br> The 'selectMovie' should return the name of the movie with the passed-in quality and be as close to the average rating among all others as possible. If there's no movie satisfied, return "No movies satisfied!".
+          <br> const movies = [["MEET ME IN ST. LOUIS", 5], ["LAST HOLIDAY", 2], ["KLAUS", 4], ["LITTLE WOMEN", 4.5], ["LOVE HARD", 3], ["THE HOLIDAY", 1.79], ["THE SHOP AROUND THE CORNER", 5], ["A CHRISTMAS PRINCE", 3.7], ["WHITE CHRISTMAS", 4], ["ALIEN XMAS", 3.5], ["LET IT SNOW", 3.3], ["NOELLE", 2.5]];
+          <br> console.log(selectMovie(movies, getRating, 'good'));	// 'KLAUS'
+          <br> 🤶 Challenge #10:
+          <br> Declare a function 'SantaMagicSack', which takes in no arguments and returns an instance of a 'SantaMagicSack' object when invoked with the 'new' keyword. SantaMagicSack should function similarly to objects - i.e. they will store values as key-value pairs with keys are strings and values are objects. All SantaMagicSack objects should contain their own 'completeItems' (to keep track of the number of complete items added to the object) and 'totalLb' (to keep track of the total pounds of all added items) properties. When a SantaMagicSack is first created, it should initialize both the 'completeItems' and 'totalLb' properties to 0.
+          <br> 🍪 Challenge #11:
+          <br> Declare a function 'ekle', which is accessible to ALL instances of 'SantaMagicSack'. 'ekle' takes in two arguments (a string called 'item' and a number called 'lb'), and when invoked on a SantaMagicSack instance, should add all characters of the item into the instance under an object with two properties:
+          <br> - nums: the number of times a specific character appears
+          <br> - lb: the number of pounds of a specific character (the pound of a character is the average pound of the string containing that character –if it's not an integer, only take the first 3 digits after the decimal point)
+          <br> Update the 'completeItems' and 'totalLb' property appropriately and return the total pound of the instance.
+          <br> 🔔 Challenge #12:
+          <br> Declare a function 'istemek', which is accessible to ALL instances of 'SantaMagicSack'. 'istemek' should take in a string (called 'item') as a single argument, and when invoked on a SantaMagicSack instance, should return the number of moves in the instance to form the input item. If it's not possible to form such an item, return "Sorry! Your request can't be met. Please come back later!". Assuming that once the input is satisfied, the number of complete items will be decremented by 1, update the 'totalLb' and 'completeItems' properties appropriately.
+          <br> 🧦 Challenge #13:
+          <br> Declare a function 'denetlemek', which is accessible to ALL instances of 'SantaMagicSack'. 'denetlemek' should take in a positive integer K as a single argument, and when invoked on a SantaMagicSack instance, should return the number of complete items with a length of K can be formed from the object.
+          <br> /// Test cases for OOP challenges: from Challenge #10 to Challenge #13 ///
+          <br> const santaSack = new SantaMagicSack();
+          <br> santaSack.ekle('lego', 3);
+          <br> santaSack.ekle('toy', 5);
+          <br> santaSack.ekle('elf', 2);
+          <br> console.log(santaSack.istemek('axd'));
+          <br> // 'Sorry! Your request can't be met. Please come back later!'
+          <br> console.log(santaSack.istemek('logo'));	// 4
+          <br> console.log(santaSack.denetlemek(3));	// 72
+          <br> console.log(santaSack);
+          <br> // SantaMagicSack { completeItems: 2, totalLb: 4.916, l: { nums: 1, lb: 1.417 }, e: { nums: 2, lb: 1.417 }, t: { nums: 1, lb: 1.667 }, y: { nums: 1, lb: 1.667 }, f: { nums: 1, lb: 0.667 } }
+          <br> 🌟 Challenge #14:
+          <br>Declare a function 'flipTiles' which takes in an NxN array as a single argument (N is an even number and all values in the 2D array should appear twice) and returns another function.
+          <br> The returned function should take in three arguments –a string (called 'player') and two numbers (called 'row' and 'col'). When the returned function is invoked, it should check if the current player opened two identical tiles in a row, if so, return "Congrats *player*! You're the winner!!!", otherwise, return "Cool! You opened *tile*" (with the *tile* is the value at the row-th and col-th indexes of the 2D array). And don't forget to greet the players if this is their first time in this game by printing out "Hey *player*! Welcome to the game!".
+          <br> > Important note: The gameboard will be divided into 4 equal parts. After each turn, the 4 sub-boards will be rotated clockwise and then the whole board will be rotated counter-clockwise.
+          <br> const gameBoard = [
+          <br>  ['apple', 'orage', 'banana', 'carrot'],
+          <br>  ['cherry', 'lychee', 'kiwi', 'lemon'],
+          <br>  ['banana', 'kiwi', 'orange', 'lychee'],
+          <br>  ['apple', 'carrot', 'cherry', 'lemon']
+          <br> ];
+          <br> const play = flipTiles(gameBoard);
+          <br> console.log(play('John', 1, 1));
+          <br> // 'Hey John! Welcome to the game!'
+          <br> // 'Cool! You opened lychee'
+          <br> console.log(play('John', 1, 2));
+          <br> // 'Cool! You opened cherry'
+          <br> console.log(play('John', 1, 0));
+          <br> // 'Cool! You opened cherry'
+          <br> // 'Congrats John! You are the winner!'
+          <br> 🦌 Challenge #15:
+          <br> Declare a function 'checkLuckyNumber', which takes in a number as a single argument and checks if the input number is a lucky number by following these rules:
+          <br> A number is a lucky number if:
+          <br> - All digits are in increasing order
+          <br> - Sum of digits divisible by their mean (after rounding down)
+          <br> If the input number is not a lucky number, check if it's possible to rearrange all the digits to form a valid one that follows the rules.
+          <br> If a lucky number can be generated, return "Tada!! *num* is a lucky number.", otherwise, return "Can't form any lucky numbers from *inputNum*".
+          <br> console.log(checkLuckyNumber(6594012));	// 'Can't form any lucky numbers from 6594012'
+          <br> console.log(checkLuckyNumber(870));	// 'Can't form any lucky numbers from 870'
+          <br> console.log(checkLuckyNumber(4132));	// 'Tada!! 1234 is a lucky number.'
+          <br> 📺 Challenge #16:
+          <br> Suppose that a valid Youtube URL is made up of the following components and is given the following format:
+          <br> https + : + // + www + . + youtube + . + com + / + watch + ? + v + = + videoId (a bunch of characters –case-sensitive).
+          <br> In which, suppose that the videoId is made up of the following rules:
+          <br> - Exactly 11 characters
+          <br> - Allowed symbols: a-z, A-Z, 0-9, - (hyphen), and _ (underscore)
+          <br> Declare a function 'formURL', which takes in an array of strings as a single argument and check if it's possible to create a valid Youtube URL following the rules. If so, return that one and … enjoy, otherwise, return "Oops!!! 404 Not Found!".
+          <br> const validArr = ['watch', 'mkOF_Kywqs', '.', '//', 'mkOFKywqs1-j', 'https', 'com', 'www', '.', 'g-OF7KGyDis', '=', '?', 'g-OF7KGyD!s', 'v', '/', ':', 'youtube', 'axOF/KGyDis', 'www', '...', 'V', 'WATCH', '?', '-'];
+          <br> const invalidArr = ['.', '//', 'mkOFKywqs1-j', 'https', 'com', 'www', '.', 'g-OF7KGyDis', '=', '?', 'v', '/', ':', 'youtube', 'axOF/KGyDis', 'www', '...', 'V', 'WATCH', '?', '-'];
+          <br> console.log(formURL(validArr));	// -> should return a valid URL ...and enjoy ^^
+          <br> console.log(formURL(invalidArr));	// 'Oops!!! 404 Not Found!'
+        </div>
+      </div>
+    </div>
     
     <div class="card">
       <div class="card-header">
