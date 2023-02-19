@@ -605,6 +605,30 @@ However, if the added number has already existed as a key in the object (and not
           
           <div class="card">
             <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#clo7">
+                Do math!
+              </a>
+            </div>
+            <div id="clo7" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Feb 19th 2023</i></div>
+                Declare a function 'doMath', which takes in a number (called 'initialValue') as a single argument and returns another function.
+                <br> The returned function can take in 2 arguments (a string (called 'operator' –it could be any of 4 basic operators: addition, subtraction, multiplication, and division) and a number) or just a single argument. When the returned function is invoked with just an equal sign ('='), return the evaluated result from all previous expressions (starting at the 'initialValue'). Otherwise, return the message "Please enter '=' to see the result!".
+                <br> Note: Do not use the 'eval()' method!
+                <br>
+                <br> const calc = doMath(3);
+                <br> console.log(calc('+', 3));	// 'Please enter '=' to see the result!'
+                <br> console.log(calc('*', 2));	// 'Please enter '=' to see the result!'
+                <br> console.log(calc('*', 2));	// 'Please enter '=' to see the result!'
+                <br> console.log(calc('/', 4));	// 'Please enter '=' to see the result!'
+                <br> console.log(calc('+', 1));	// 'Please enter '=' to see the result!'
+                <br> console.log(calc('='));	// 7 -> (3 + 3 * 2 * 2 / 4 + 1 = 7)
+              </div>
+            </div>
+          </div>
+          
+          <div class="card">
+            <div class="card-header">
               <a class="collapsed card-link" data-toggle="collapse" href="#clo6">
                 Find pairs
               </a>
