@@ -34,12 +34,54 @@
               Collapsible Group Item #3
             </a>
           </div>
-          <div id="collapseThree" class="collapse" data-parent="#accordion">
+          <div id="collapseThree" class="collapse" data-parent="#accordionParent">
             <div class="card-body">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </div>
           </div>
         </div> -->
+          
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#rec13">
+                Deep Object
+              </a>
+            </div>
+            <div id="rec13" class="collapse" data-parent="#accordionParent">
+              <div class="card-body">
+                <div class="last-updated"><i>Last updated: Feb 28th 2023</i></div>
+                Declare a function 'deepObject' which takes in an arbitrarily nested object and a number called 'depth' as arguments. Return values of the non-empty object at the 'depth' level (if there's more than one valid result, return any of them). If nothing found, return "No objects at the level *depth*!".
+                <br>
+                <br> For example:
+                <br> const obj = {
+                <br> &nbsp;  &nbsp;  &nbsp;  a: 'depth 1 - key a',
+                <br> &nbsp;  &nbsp;  &nbsp;  b: 'depth 1 - key b',
+                <br> &nbsp;  &nbsp;  &nbsp;  c: {},
+                <br> &nbsp;  &nbsp;  &nbsp;  d: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    e: 'depth 2 - key e',
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    f: 'depth 2 - key f',
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    g: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      h: {},
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      i: 'depth 3 - key i',
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      j: {},
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      k: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;        l: 'depth 4 - key l'
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      }
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    },
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    m: 'depth 2 - key m'
+                <br> &nbsp;  &nbsp;  &nbsp;  },
+                <br> &nbsp;  &nbsp;  &nbsp;  n: 'depth 1 - key n',
+                <br> &nbsp;  &nbsp;  &nbsp;  o: {},
+                <br> &nbsp;  &nbsp;  &nbsp;  p: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    q: 'depth 2 - key q'
+                <br> &nbsp;  &nbsp;  &nbsp;  }
+                <br> }
+                <br> console.log(deepObject(obj, 4));	// { l: 'depth 4 - key l' }
+                <br> console.log(deepObject(obj, 2));	// {q: 'depth 2 - key q'} OR { e: 'depth 2 - key e', f: 'depth 2 - key f', g: { h: { }, i: 'depth 3 - key i', j: { }, k: { l: 'depth 4 - key l' } }, m: 'depth 2 - key m' }
+                <br> console.log(deepObject(obj, 3));	// { h: { }, i: 'depth 3 - key i', j: { }, k: { l: 'depth 4 - key l' } }
+              </div>
+            </div>
+          </div>
           
           <div class="card">
             <div class="card-header">
