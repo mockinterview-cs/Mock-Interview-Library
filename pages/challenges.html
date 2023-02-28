@@ -54,27 +54,27 @@
                 <br>
                 <br> For example:
                 <br> const obj = {
-                <br> &nbsp;  &nbsp;  &nbsp;  a: 'depth 1 - key a',
-                <br> &nbsp;  &nbsp;  &nbsp;  b: 'depth 1 - key b',
-                <br> &nbsp;  &nbsp;  &nbsp;  c: {},
-                <br> &nbsp;  &nbsp;  &nbsp;  d: {
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    e: 'depth 2 - key e',
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    f: 'depth 2 - key f',
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    g: {
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      h: {},
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      i: 'depth 3 - key i',
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      j: {},
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      k: {
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;        l: 'depth 4 - key l'
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      }
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    },
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    m: 'depth 2 - key m'
-                <br> &nbsp;  &nbsp;  &nbsp;  },
-                <br> &nbsp;  &nbsp;  &nbsp;  n: 'depth 1 - key n',
-                <br> &nbsp;  &nbsp;  &nbsp;  o: {},
-                <br> &nbsp;  &nbsp;  &nbsp;  p: {
-                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;    q: 'depth 2 - key q'
-                <br> &nbsp;  &nbsp;  &nbsp;  }
+                <br> &nbsp;  &nbsp;  a: 'depth 1 - key a',
+                <br> &nbsp;  &nbsp;  b: 'depth 1 - key b',
+                <br> &nbsp;  &nbsp;  c: {},
+                <br> &nbsp;  &nbsp;  d: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;    e: 'depth 2 - key e',
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;    f: 'depth 2 - key f',
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;    g: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      h: {},
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      i: 'depth 3 - key i',
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      j: {},
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      k: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;        l: 'depth 4 - key l'
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;      }
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;    },
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;    m: 'depth 2 - key m'
+                <br> &nbsp;  &nbsp;  },
+                <br> &nbsp;  &nbsp;  n: 'depth 1 - key n',
+                <br> &nbsp;  &nbsp;  o: {},
+                <br> &nbsp;  &nbsp;  p: {
+                <br> &nbsp;  &nbsp;  &nbsp;  &nbsp;    q: 'depth 2 - key q'
+                <br> &nbsp;  &nbsp;  }
                 <br> }
                 <br> console.log(deepObject(obj, 4));	// { l: 'depth 4 - key l' }
                 <br> console.log(deepObject(obj, 2));	// {q: 'depth 2 - key q'} OR { e: 'depth 2 - key e', f: 'depth 2 - key f', g: { h: { }, i: 'depth 3 - key i', j: { }, k: { l: 'depth 4 - key l' } }, m: 'depth 2 - key m' }
